@@ -96,3 +96,16 @@ This command will compile the frontend source files and open the application in 
 ## Final Steps
 
 Once both the frontend and backend are running, you should be able to interact with the application through your web browser at **localhost:3000**. This setup allows you to develop and test the application locally.
+
+## Screenshots
+![](Assets/Frontend_UI.jpg)
+![](Assets/Input_File_Text.jpg)
+![](Assets/Input_Folder_Details.jpg)
+![](Assets/DynamoDB_Tables.jpg)
+![](Assets/EC2_Trigger_Lambda_Function_Overview.jpg)
+![](Assets/EC2_Instance_Running.jpg)
+![](Assets/S3_Bucket_After_Script_Run.jpg)
+![](Assets/Output_Folder_File.jpg)
+![](Assets/Output_File.jpg)
+![](Assets/DynamoDB_Output_File_Detail.jpg)
+
