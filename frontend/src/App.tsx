@@ -7,24 +7,28 @@ function App() {
   const [file, setFile] = useState<File | null>(null);
   const [text, setText] = useState<string>('');
 
+  // Handle the file input change event
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
       setFile(event.target.files[0]);
     }
   };
 
+  // Handle the text input change event
   const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
   };
 
+  // Handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission behavior
     if (file && text) {
       const formData = new FormData();
       formData.append('file', file);
       formData.append('text', text);
 
       try {
+        // Send a POST request to the server with the form data
         const response = await axios.post('http://localhost:3002/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'

@@ -2,7 +2,7 @@ import boto3
 import os
 
 # Variables
-id = "MZFrHT8JSIbvMEQ_RXXYv"
+id = ""
 output_filename = '/home/ec2-user/OutputFile.txt'
 bucket_name = 'fovus-challenge-bucket1'
 
@@ -19,7 +19,7 @@ response = dynamo_client.get_item(
 
 if 'Item' not in response:
     print(f"No item found with ID {id}")
-    exit()  # Exit if no item found
+    exit()  
 
 item = response['Item']
 file_path = item['file_path']['S']
@@ -39,10 +39,10 @@ try:
     print("input file downloaded")
 except s3_client.exceptions.NoSuchKey:
     print(f"The file {file_path} does not exist in the bucket {bucket_name}.")
-    exit()  # Stop further execution if file not found
+    exit()  
 except Exception as e:
     print("An unexpected error occurred:", e)
-    exit()  # Stop further execution on other errors
+    exit() 
 
 # Append text to the file
 if os.path.exists(output_filename):
@@ -57,13 +57,13 @@ else:
         print("Text appended.")
 
 # Upload the modified file back to S3
-new_s3_path = 'output/OutputFile.txt'  # Modify as needed
+new_s3_path = 'output/OutputFile.txt'
 try:
     s3_client.upload_file(output_filename, bucket_name, new_s3_path)
     print("output file uploaded")
 except Exception as e:
     print("Failed to upload file:", e)
-    exit()  # Stop further execution on upload error
+    exit()
 
 # Update DynamoDB with the new file path
 try:
