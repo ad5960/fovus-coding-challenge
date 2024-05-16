@@ -98,6 +98,7 @@ This command will compile the frontend source files and open the application in 
 Once both the frontend and backend are running, you should be able to interact with the application through your web browser at **localhost:3000**. This setup allows you to develop and test the application locally.
 
 ## Screenshots
+
 ![](Assets/Frontend_UI.jpg)
 ![](Assets/Input_File_Text.jpg)
 ![](Assets/Input_Folder_Details.jpg)
