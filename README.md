@@ -97,6 +97,17 @@ This command will compile the frontend source files and open the application in 
 
 Once both the frontend and backend are running, you should be able to interact with the application through your web browser at **localhost:3000**. This setup allows you to develop and test the application locally.
 
+## References
+1. https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
+2. https://docs.aws.amazon.com/apigateway/latest/developerguide/integrating-api-with-aws-services-s3.html
+3. https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial2.html
+4. https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/run_instances.html
+5. https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.html
+6. https://tmmr.uk/post/upload-to-s3-through-api-gateway/
+7. https://medium.com/@the.nick.miller/use-python-lambdas-to-remotely-run-shell-commands-on-ec2-instances-57a92a2f5943
+8. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group
+9. https://docs.aws.amazon.com/cli/latest/reference/ec2/terminate-instances.html
+
 ## Screenshots
 
 ![](Assets/Frontend_UI.jpg)
