@@ -2,6 +2,8 @@
 
 Welcome to our project repository! This project was developed as part of a coding challenge designed to showcase our skills in handling AWS services, specifically focusing on automation and integration between various AWS components. The core functionality revolves around automating the deployment and management of AWS resources using Lambda functions.
 
+![](Assets/fovustechstack.png)
+
 ## Project Overview
 
 The objective of this coding challenge is to demonstrate a practical application of AWS services by creating a fully automated process that reacts to changes in a DynamoDB table to perform specific tasks. The project simulates a real-world scenario where uploaded files and their metadata are managed in a highly dynamic environment, utilizing AWS's scalable and managed services.
@@ -94,3 +96,17 @@ This command will compile the frontend source files and open the application in 
 ## Final Steps
 
 Once both the frontend and backend are running, you should be able to interact with the application through your web browser at **localhost:3000**. This setup allows you to develop and test the application locally.
+
+## Screenshots
+
+![](Assets/Frontend_UI.jpg)
+![](Assets/Input_File_Text.jpg)
+![](Assets/Input_Folder_Details.jpg)
+![](Assets/DynamoDB_Tables.jpg)
+![](Assets/EC2_Trigger_Lambda_Function_Overview.jpg)
+![](Assets/EC2_Instance_Running.jpg)
+![](Assets/S3_Bucket_After_Script_Run.jpg)
+![](Assets/Output_Folder_File.jpg)
+![](Assets/Output_File.jpg)
+![](Assets/DynamoDB_Output_File_Detail.jpg)
+
