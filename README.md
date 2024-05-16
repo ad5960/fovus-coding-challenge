@@ -2,6 +2,8 @@
 
 Welcome to our project repository! This project was developed as part of a coding challenge designed to showcase our skills in handling AWS services, specifically focusing on automation and integration between various AWS components. The core functionality revolves around automating the deployment and management of AWS resources using Lambda functions.
 
+![](Assets/fovustechstack.png)
+
 ## Project Overview
 
 The objective of this coding challenge is to demonstrate a practical application of AWS services by creating a fully automated process that reacts to changes in a DynamoDB table to perform specific tasks. The project simulates a real-world scenario where uploaded files and their metadata are managed in a highly dynamic environment, utilizing AWS's scalable and managed services.
